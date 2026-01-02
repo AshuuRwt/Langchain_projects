@@ -1,8 +1,30 @@
-streamlit==1.52.2
-python-dotenv==1.2.1
-groq==0.1.0        # Official Groq Python SDK
-langchain==0.1.214 # Latest stable LangChain
-langchain_community==0.4.1
-langchain_core==1.2.5
-faiss-cpu==1.7.4   # For vector storage
-ollama-embeddings==0.1.0 # If OllamaEmbeddings is a separate package
+# Core
+python-dotenv>=1.2.0
+streamlit>=1.12.0
+
+# Web / API
+fastapi>=0.100.0
+uvicorn>=0.23.0
+sse-starlette>=0.16.0
+
+# LangChain ecosystem
+langchain>=0.1.214            # Latest stable
+langchain-core>=1.2.5
+langchain-community>=0.4.1
+langchain-openai>=0.0.8        # Optional if using OpenAI
+ollama-embeddings>=0.1.0       # For OllamaEmbeddings
+
+# Vector / Retrieval
+faiss-cpu>=1.7.4
+chromadb>=0.3.33
+
+# Web scraping / parsing
+bs4>=4.12.2
+pypdf>=3.14.0
+wikipedia>=1.4.0
+
+# Groq API
+groq>=0.1.0                    # Free Groq API access
+
+# Compatibility
+pydantic<2                     # Required for some LangChain versions
