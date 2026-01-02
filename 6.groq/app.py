@@ -10,9 +10,13 @@ from langchain.chains import create_retrieval_chain
 from langchain_community.vectorstores import FAISS
 import time
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 #load Groq api
-groq_api_key=os.environ["GROQ_API_KEY"]
+groq_api_key=os.getenv("GROQ_API_KEY")
 if not groq_api_key:
     st.error("GROQ_API_KEY not found")
     st.stop()
