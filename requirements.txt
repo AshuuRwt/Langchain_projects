@@ -1,9 +1,7 @@
-langchain>=0.1.0
+groq
+langchain
 streamlit
 python-dotenv
 langchain_community
-langserve
-fastapi
-langchain_openai
 langchain_core
-groq
+faiss-cpu
