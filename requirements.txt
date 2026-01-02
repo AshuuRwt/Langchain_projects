@@ -1,7 +1,8 @@
-groq
-langchain
-streamlit
-python-dotenv
-langchain_community
-langchain_core
-faiss-cpu
+streamlit==1.52.2
+python-dotenv==1.2.1
+groq==0.1.0        # Official Groq Python SDK
+langchain==0.1.214 # Latest stable LangChain
+langchain_community==0.4.1
+langchain_core==1.2.5
+faiss-cpu==1.7.4   # For vector storage
+ollama-embeddings==0.1.0 # If OllamaEmbeddings is a separate package
